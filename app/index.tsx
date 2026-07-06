@@ -9,6 +9,10 @@ export default function App() {
       </Text>
 
       <LinkButton href='/sign-in'>Sign In</LinkButton>
+
+      <LinkButton href='/sign-up' type='secondary'>
+        Sign Up
+      </LinkButton>
     </View>
   )
 }
