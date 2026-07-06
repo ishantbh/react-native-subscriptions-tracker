@@ -1,3 +1,4 @@
+import { LinkButton } from '@/components/link-button'
 import { Text, View } from 'react-native'
 
 export default function App() {
@@ -6,6 +7,8 @@ export default function App() {
       <Text className='text-xl font-bold text-blue-500'>
         Welcome to Nativewind!
       </Text>
+
+      <LinkButton href='/sign-in'>Sign In</LinkButton>
     </View>
   )
 }
