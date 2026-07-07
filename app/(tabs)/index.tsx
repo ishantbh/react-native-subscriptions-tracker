@@ -1,4 +1,5 @@
 import { LinkButton } from '@/components/link-button'
+import { Link } from 'expo-router'
 import { Text, View } from 'react-native'
 
 export default function App() {
@@ -13,6 +14,16 @@ export default function App() {
       <LinkButton href='/sign-up' type='secondary'>
         Sign Up
       </LinkButton>
+
+      <Link href='/subscriptions/spotify'>Spotify Subscription</Link>
+      <Link
+        href={{
+          pathname: '/subscriptions/[id]',
+          params: { id: 'claude' },
+        }}
+      >
+        Claude Max Subscription
+      </Link>
     </View>
   )
 }
